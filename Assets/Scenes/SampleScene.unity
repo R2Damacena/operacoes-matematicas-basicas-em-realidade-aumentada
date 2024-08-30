@@ -308,11 +308,12 @@ GameObject:
   - component: {fileID: 308312844}
   - component: {fileID: 308312843}
   - component: {fileID: 308312842}
-  - component: {fileID: 308312845}
   - component: {fileID: 308312846}
   - component: {fileID: 308312847}
+  - component: {fileID: 308312848}
+  - component: {fileID: 308312849}
   m_Layer: 0
-  m_Name: MinusOperatorTarget
+  m_Name: '-'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -388,7 +389,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 308312847}
+  mPreview: {fileID: 308312849}
 --- !u!4 &308312844
 Transform:
   m_ObjectHideFlags: 0
@@ -406,19 +407,6 @@ Transform:
   - {fileID: 1726682133}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &308312845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 308312840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3e2c22260e4b7249a89874878132cbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mathOperationManager: {fileID: 477239621}
 --- !u!65 &308312846
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -436,11 +424,51 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.14, y: 0.13, z: 0.19}
-  m_Center: {x: 0, y: 0.06, z: 0}
+  m_Size: {x: 0.10339488, y: 0.018847104, z: 0.11509457}
+  m_Center: {x: -0.0035068095, y: 0.0044235643, z: -0.0021044165}
 --- !u!114 &308312847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308312840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe67a7f06f689074ab2606599d693f8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resultTextManager: {fileID: 1726682130}
+--- !u!54 &308312848
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308312840}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &308312849
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -503,9 +531,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da3e45e959cc1fb448e2e57689699865, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resultTextManager: {fileID: 1726682130}
-  target1: {fileID: 2106517271}
-  target2: {fileID: 673599202}
 --- !u!4 &488903565 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 13825c75e0da5b944ae93d615fffec42, type: 3}
@@ -522,12 +547,11 @@ GameObject:
   - component: {fileID: 673599202}
   - component: {fileID: 673599201}
   - component: {fileID: 673599200}
-  - component: {fileID: 673599205}
   - component: {fileID: 673599206}
   - component: {fileID: 673599207}
   m_Layer: 0
-  m_Name: NumberTwoTarget
-  m_TagString: Untagged
+  m_Name: 2
+  m_TagString: Number
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -619,19 +643,6 @@ Transform:
   - {fileID: 250287394}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &673599205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 673599199}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db133ef73e28c1448858d770cae692a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mathOperationManager: {fileID: 477239621}
 --- !u!65 &673599206
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -649,10 +660,10 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.14, y: 0.13, z: 0.19}
-  m_Center: {x: 0, y: 0.06, z: 0}
+  m_Size: {x: 0.119356744, y: 0.009930802, z: 0.14272098}
+  m_Center: {x: -0.0032316633, y: -0.000034609344, z: 0.0019658282}
 --- !u!114 &673599207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1043,7 +1054,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -1187,12 +1198,11 @@ GameObject:
   - component: {fileID: 2106517271}
   - component: {fileID: 2106517270}
   - component: {fileID: 2106517269}
-  - component: {fileID: 2106517272}
   - component: {fileID: 2106517273}
   - component: {fileID: 2106517274}
   m_Layer: 0
-  m_Name: NumberFiveTarget
-  m_TagString: Untagged
+  m_Name: 5
+  m_TagString: Number
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1284,19 +1294,6 @@ Transform:
   - {fileID: 1637133535}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2106517272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2106517267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10aa09b17a14e6648b4f6822ac8d02d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mathOperationManager: {fileID: 477239621}
 --- !u!65 &2106517273
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1314,10 +1311,10 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.14, y: 0.13, z: 0.19}
-  m_Center: {x: 0, y: 0.06, z: 0}
+  m_Size: {x: 0.12837887, y: 0.013831211, z: 0.14758104}
+  m_Center: {x: -0.008486986, y: 0.0019155936, z: -0.005118221}
 --- !u!114 &2106517274
 MonoBehaviour:
   m_ObjectHideFlags: 0

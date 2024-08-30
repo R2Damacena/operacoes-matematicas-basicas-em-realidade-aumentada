@@ -10,8 +10,8 @@ public class ResultTextManager : MonoBehaviour
         mTextMeshPro = GetComponent<TextMeshPro>();
     }
 
-    public void UpdateResultText(int result)
+    public void UpdateResultText(string resultText)
     {
-        mTextMeshPro.text = result.ToString();
+        mTextMeshPro.text = resultText;
     }
 }
