@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: a708c7da0dc461641bd10900842e38ab
+  - enabled: 1
     path: Assets/Scenes/RealidadeAumentada.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Sobre.unity
+    guid: fab0b4c3f1c0a874d953ab4d89ddcf80
   m_configObjects: {}
