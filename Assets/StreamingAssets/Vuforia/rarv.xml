@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="divisao" size="0.100000 0.100000" />
+    <ImageTarget name="menos" size="0.100000 0.100000" />
+    <ImageTarget name="multiplicacao" size="0.100000 0.100000" />
     <ImageTarget name="mais" size="0.100000 0.100000" />
     <ImageTarget name="two" size="0.100000 0.100000" />
     <ImageTarget name="five" size="0.100000 0.100000" />
-    <ImageTarget name="teste" size="0.300000 0.163313" />
   </Tracking>
 </QCARConfig>
