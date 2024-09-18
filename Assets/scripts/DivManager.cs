@@ -32,7 +32,7 @@ public class DivManager : MonoBehaviour
                 Debug.Log("Segundo número: " + secondNumber);
 
                 // Calcula e exibe o resultado da subtração
-                PerformSubtraction();
+                PerformDiv();
             }
         }
     }
@@ -78,15 +78,16 @@ public class DivManager : MonoBehaviour
         }
     }
 
-    void PerformSubtraction()
+    void PerformDiv()
     {
         if (isFirstSet && isSecondSet)
         {
-            int result = firstNumber / secondNumber;
+            // Converte os números para float para realizar a divisão corretamente
+            float result = (float)firstNumber / (float)secondNumber;
             Debug.Log("Resultado da subtração: " + firstNumber + " / " + secondNumber + " = " + result);
 
             // Exibe o resultado da subtração
-            UpdateResultText(result.ToString());
+            UpdateResultText(result.ToString("F2")); // Formata o resultado com 2 casas decimais
         }
     }
 

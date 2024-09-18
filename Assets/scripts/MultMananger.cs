@@ -32,7 +32,7 @@ public class MultMananger : MonoBehaviour
                 Debug.Log("Segundo número: " + secondNumber);
 
                 // Calcula e exibe o resultado da subtração
-                PerformSubtraction();
+                PerformMulti();
             }
         }
     }
@@ -78,7 +78,7 @@ public class MultMananger : MonoBehaviour
         }
     }
 
-    void PerformSubtraction()
+    void PerformMulti()
     {
         if (isFirstSet && isSecondSet)
         {

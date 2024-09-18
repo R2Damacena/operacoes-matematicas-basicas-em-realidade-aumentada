@@ -32,7 +32,7 @@ public class PlusManager : MonoBehaviour
                 Debug.Log("Segundo número: " + secondNumber);
 
                 // Calcula e exibe o resultado da subtração
-                PerformSubtraction();
+                PerformSom();
             }
         }
     }
@@ -78,7 +78,7 @@ public class PlusManager : MonoBehaviour
         }
     }
 
-    void PerformSubtraction()
+    void PerformSom()
     {
         if (isFirstSet && isSecondSet)
         {
